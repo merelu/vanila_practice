@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="excercise.png" alt="운동" /></div>
+        <div class="swiper-slide"><img src="excercise.png" alt="운동" /></div>
+        <div class="swiper-slide"><img src="excercise.png" alt="운동" /></div>
+        <div class="swiper-slide"><img src="study.png" alt="" /></div>
+        <div class="swiper-slide"><img src="study.png" alt="" /></div>
+        <div class="swiper-slide"><img src="study.png" alt="" /></div>
+        <div class="swiper-slide"><img src="time.png" alt="" /></div>
+        <div class="swiper-slide"><img src="time.png" alt="" /></div>
+        <div class="swiper-slide"><img src="time.png" alt="" /></div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
